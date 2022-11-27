@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,40 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
 
-    <!-- Normalize CSS -->
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/851/PNG/512/Pokedex_tool_icon-icons.com_67529.png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Font Roboto -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
-    <!-- Nosso CSS -->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    
+    <link rel="stylesheet" href="/Pokedex/assets/css/global.css">
+    <link rel="stylesheet" href="/Pokedex/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/Pokedex/assets/css/poke-detail.css">
+
+    <script src="https://kit.fontawesome.com/d0c7bb4d64.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
+    <section class="content" id="content">
+        <h1 class="pokedex-title">Pokedex</h1>
 
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
+    
+        <ol id="pokemonList" class="pokemons">  
         </ol>
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
-                Load More
+                Ver mais
             </button>
         </div>
     </section>
 
-    <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+
+    <script src="/Pokedex/assets/js/pokemon-model.js"></script>
+    <script src="/Pokedex/assets/js/pokemon-api.js"></script>
+    <script src="/Pokedex/assets/js/main.js"></script>
 </body>
 
 </html>
